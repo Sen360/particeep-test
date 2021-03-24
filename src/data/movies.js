@@ -1,3 +1,5 @@
+import CreedII from './creed-2.jpg';
+
 const movies = [
     {
         id: '1',
@@ -33,7 +35,7 @@ const movies = [
         category: 'Drame',
         likes: 28,
         dislikes: 21,
-        image: "https://tse4.mm.bing.net/th?id=OIP.C7XT3Dh-k3ZROdsBMswKGgHaIk&pid=Api&P=0&w=300&h=300"
+        image: CreedII
     }, {
         id: '6',
         title: 'Pulp Fiction',

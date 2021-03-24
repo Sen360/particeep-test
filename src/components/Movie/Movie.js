@@ -52,7 +52,7 @@ const Movie = ({
             </Button>
             <div className='avis-user'>
                 {evaluation === 'like' ?
-                    <span className='avis-like'>Vous avez aimez ce film</span> :
+                    <span className='avis-like'>Vous aimez ce film</span> :
                     evaluation === 'dislike' ?
                         <span className='avis-dislike'>Vous n'aimez pas ce film</span> :
                         <span></span>
