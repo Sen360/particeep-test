@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.scss'
-import { movies$ } from '../../data/movies'
+import { movies$} from '../../data/movies'
 import Header from '../Header/Header'
 import MovieList from '../MovieList/MovieList'
 import Footer from '../Footer/Footer'
@@ -22,13 +22,11 @@ const App = () => {
             .then(
                 movies => {
                     setMoviesList(movies)
-                    setIsLoading(false)
                 }
             )
             .catch(error => console.log(error))
     }, [])
 
-    const [isLoading, setIsLoading] = useState(true)
     const [moviesList, setMoviesList] = useState([])
     const [categoriesList, setCategoriesList] = useState([])
     const [totalPages, setTotalPages] = useState(1)
@@ -43,7 +41,6 @@ const App = () => {
             <Navbar/>
             <Header categoriesList={categoriesList} />
             <MovieList
-                isLoading={isLoading}
                 moviesList={moviesList}
                 setMoviesList={setMoviesList}
                 setTotalPages={setTotalPages}
