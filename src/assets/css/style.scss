@@ -1,0 +1,31 @@
+html,
+body,
+#root,
+.App {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 32px 16px;
+    margin: auto;
+}
+
+select,
+input[type='button'] {
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    margin: 0 0 0 8px;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: black;
+}
